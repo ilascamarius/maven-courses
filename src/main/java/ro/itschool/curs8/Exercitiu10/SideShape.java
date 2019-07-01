@@ -2,8 +2,7 @@ package ro.itschool.curs8.Exercitiu10;
 
 public abstract class SideShape implements Shape {
 
-    int getNoOfSides() {
+    abstract int getNoOfSides();
 
-        return getNoOfSides();
-    }
+
 }
