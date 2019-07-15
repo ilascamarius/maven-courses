@@ -6,5 +6,7 @@ public class MainListOperations {
 
         ListOperations listOperations = new ListOperations();
         System.out.println(listOperations.compareLists());
+        System.out.println(listOperations.intersectAll());
+        System.out.println(listOperations.unionAll());
     }
 }
