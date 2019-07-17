@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 public class Glass {
 
@@ -22,3 +22,5 @@ public class Glass {
         return available;
     }
 }
+
+ */

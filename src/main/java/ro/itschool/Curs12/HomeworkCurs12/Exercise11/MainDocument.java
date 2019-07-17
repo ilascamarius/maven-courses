@@ -21,11 +21,16 @@ public class MainDocument {
         System.out.println(docs);
 
         //Afisare documente dupa nume
-        Optional<Document> docsName = documentService.getDocumentWithName("Costel");
+        Optional<Document> docsName = documentService.getDocumentWithName("Cornel");
         System.out.println(docsName);
 
+        //extrage si afiseaza numele dupa care cauta documentul
         if (docsName.isPresent()) {
-            System.out.println(docsName.getName);
+            System.out.println(docsName.get().getName());
         }
+
+
+        documentService.addMarkupForDocument(new Markup("7d8", 3, "content2"), "5c6");
+
     }
 }

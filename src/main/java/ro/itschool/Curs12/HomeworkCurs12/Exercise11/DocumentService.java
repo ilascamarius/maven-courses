@@ -19,7 +19,7 @@ public class DocumentService {
     }
 
     //Creare metoda pentru extragerea documentelor dupa nume
-    Optional<Document> getDocumentWithName(String name) {
+    public Optional<Document> getDocumentWithName(String name) {
         //Iteram lista de documente
         for (Document docsp : documents) {
             if (docsp.getName().equals(name)) {
@@ -27,6 +27,26 @@ public class DocumentService {
             }
         }
         return Optional.empty();
+    }
+
+    public Optional<Document> getDocumentById(String id) {
+        for (Document docpId : documents) {
+            if (docpId.getDocumentId().equals(id)) {
+                return Optional.of(docpId);
+            }
+        }
+        return Optional.empty();
+    }
+
+    public void addDocument(Document doc) {
+        documents.add(doc);
+    }
+
+    public void addMarkupForDocument(Markup markup, String docId) {
+        Optional<Document> doc = getDocumentById(docId);
+        if (doc.isPresent()) {
+            doc.get().addMarkup(markup);
+        }
     }
 
 }

@@ -1,6 +1,4 @@
-package ro.itschool.Curs12.HomeworkCurs12.Exercise11;
-
-//import ro.itschool.Curs12.ExerciseCourse.Markup;
+package ro.itschool.Curs12.HomeworkCurs12.Exercise10;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,17 +6,21 @@ import java.util.Objects;
 
 public class Document {
 
+    //Definire variabile utilizate in obiect Document
     private final String documentId;
     private final String name;
     private final String content;
     private final List<Markup> markups;
 
-    public Document(String documentId, String name, String content) {
+    //Creare metoda Document pentru constructor si pentru initializarea obiectului Document
+    public Document(String documentId, String content, String name) {
         this.documentId = documentId;
         this.name = name;
         this.content = content;
         this.markups = new ArrayList<>();
     }
+
+    //Creare metoda get pentru extragerea variabilelor utilizate in obiect
 
     public String getDocumentId() {
         return documentId;
@@ -65,7 +67,4 @@ public class Document {
                 ", markups=" + markups +
                 '}';
     }
-
 }
-
-

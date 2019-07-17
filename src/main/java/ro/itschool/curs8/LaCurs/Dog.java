@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 public abstract class Dog extends Pet {
 
@@ -16,3 +16,5 @@ public abstract class Dog extends Pet {
 
 
 }
+
+ */

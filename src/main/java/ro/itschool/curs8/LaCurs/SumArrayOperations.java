@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 import ro.itschool.curs8.LaCurs.ArrayOperations;
 
@@ -16,3 +16,5 @@ public abstract class SumArrayOperations implements ArrayOperations {
         return result;
     }
 }
+
+ */

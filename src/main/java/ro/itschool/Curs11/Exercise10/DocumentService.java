@@ -24,7 +24,7 @@ public class DocumentService {
    /* public Document addMarkupForDocument(List<Document> documents, List<Markups> markups){
         List<String>markupForDocument=new ArrayList<>();
         for (Document mark:documents){
-           markupForDocument.add
+           if()
         }
     }*/
 }

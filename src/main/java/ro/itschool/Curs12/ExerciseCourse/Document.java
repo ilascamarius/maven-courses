@@ -1,6 +1,4 @@
-package ro.itschool.Curs12.HomeworkCurs12.Exercise11;
-
-//import ro.itschool.Curs12.ExerciseCourse.Markup;
+package ro.itschool.Curs12.ExerciseCourse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +11,7 @@ public class Document {
     private final String content;
     private final List<Markup> markups;
 
-    public Document(String documentId, String name, String content) {
+    public Document(String documentId, String content, String name) {
         this.documentId = documentId;
         this.name = name;
         this.content = content;
@@ -65,7 +63,4 @@ public class Document {
                 ", markups=" + markups +
                 '}';
     }
-
 }
-
-

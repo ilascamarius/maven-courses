@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 public abstract class Cat extends Pet {
 
@@ -12,4 +12,4 @@ public abstract class Cat extends Pet {
 
         return 4;
     }
-}
+}*/

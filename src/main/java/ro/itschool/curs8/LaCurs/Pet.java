@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 import ro.itschool.curs8.LaCurs.Animals;
 
@@ -11,3 +11,5 @@ public abstract class Pet implements Animals {
     }
 
 }
+
+ */

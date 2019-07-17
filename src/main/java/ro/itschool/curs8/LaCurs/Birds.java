@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 public abstract class Birds extends Pet {
     public String voice(){
@@ -12,3 +12,4 @@ public abstract class Birds extends Pet {
         return 2;
     }
 }
+*/

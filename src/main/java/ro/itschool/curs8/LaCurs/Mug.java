@@ -1,10 +1,10 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 import ro.itschool.curs8.LaCurs.Glass;
 
-public class Mug extends /*Mostenire de la glass*/ Glass {
+public class Mug extends /*Mostenire de la glass*/ /*Glass {
 
-    private int handleRadius;
+ /*   private int handleRadius;
 
     public Mug (){
         this(300);
@@ -22,4 +22,4 @@ public class Mug extends /*Mostenire de la glass*/ Glass {
 
     }
 
-}
+}*/

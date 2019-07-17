@@ -1,4 +1,4 @@
-package ro.itschool.curs8.LaCurs;
+/*package ro.itschool.curs8.LaCurs;
 
 public interface Animals {
 
@@ -6,4 +6,4 @@ public interface Animals {
     int numberOfLimbs();
     void eat(String food);
 
-}
+}*/

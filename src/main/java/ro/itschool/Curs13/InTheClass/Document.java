@@ -1,17 +1,19 @@
-package ro.itschool.Curs12.HomeworkCurs12.Exercise11;
-
-//import ro.itschool.Curs12.ExerciseCourse.Markup;
+package ro.itschool.Curs13.InTheClass;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 public class Document {
-
     private final String documentId;
     private final String name;
     private final String content;
     private final List<Markup> markups;
+
+    public Document(String content, String name) {
+        this(UUID.randomUUID().toString(), content, name);
+    }
 
     public Document(String documentId, String name, String content) {
         this.documentId = documentId;
@@ -33,12 +35,9 @@ public class Document {
     }
 
     public List<Markup> getMarkups() {
-        return new ArrayList<>(markups);
+        return markups;
     }
 
-    public void addMarkup(Markup markup) {
-        markups.add(markup);
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -66,6 +65,7 @@ public class Document {
                 '}';
     }
 
+    public void addMarkup(Markup markup) {
+        markups.add(markup);
+    }
 }
-
-
