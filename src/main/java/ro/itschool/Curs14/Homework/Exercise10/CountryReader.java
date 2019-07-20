@@ -7,9 +7,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class CountryReader {
     private final List<Country> country;
+
+    public List<Country> getAllCountries() {
+        return new ArrayList<>(country);
+    }
 
     public CountryReader(String path) throws IOException {
         this.country = fetchCountry(path);
@@ -19,12 +24,25 @@ public class CountryReader {
     private List<Country> fetchCountry(String path) throws IOException {
         List<Country> resultCountry = new ArrayList<>();
         BufferedReader breader = new BufferedReader(new FileReader(new File(path)));
-        String line;
+        String line = breader.readLine();
+        String name = null;
+        //Long poulation=null;
+        //int area=0;
         // String[] splitResult;
         // String name = null;
-        while ((line = breader.readLine()) != null) {
-            resultCountry.add(new Country("Name", "Capital", 34, 45));
+        while (line != null) {
 
+            String[] countryElem = line.split(Pattern.quote("|"));
+            Country country = new Country(countryElem[0], countryElem[1], Integer.parseInt(countryElem[2]), Integer.parseInt(countryElem[3]));
+            resultCountry.add(country);
+
+           /* if (name==null){
+                name=line;
+            }else {
+                resultCountry.add(new Country(line, name));
+                name=null;
+            }*/
+            line = breader.readLine();
         }
 
         return resultCountry;

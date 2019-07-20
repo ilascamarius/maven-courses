@@ -3,16 +3,41 @@ package ro.itschool.Curs14.Homework.Exercise10;
 import java.util.Objects;
 
 public class Country {
-    private final String name;
-    private final String capital;
-    private final long population;
-    private final int area;
 
+
+    private String name;
+    private String capital;
+    private long population;
+    private int area;
+
+    public Country() {
+    }
+
+    public Country(String name, String capital) {
+        this.name = name;
+        this.capital = capital;
+    }
 
     public Country(String name, String capital, long population, int area) {
         this.name = name;
         this.capital = capital;
         this.population = population;
+        this.area = area;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
+
+    public void setPopulation(long population) {
+        this.population = population;
+    }
+
+    public void setArea(int area) {
         this.area = area;
     }
 
@@ -32,6 +57,7 @@ public class Country {
     public int getArea() {
         return area;
     }
+
 
     @Override
     public boolean equals(Object o) {
