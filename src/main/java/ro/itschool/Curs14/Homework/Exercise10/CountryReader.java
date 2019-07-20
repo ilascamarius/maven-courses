@@ -20,14 +20,20 @@ public class CountryReader {
         List<Country> resultCountry = new ArrayList<>();
         BufferedReader breader = new BufferedReader(new FileReader(new File(path)));
         String line;
-        String[] splitResult;
+        // String[] splitResult;
         // String name = null;
         while ((line = breader.readLine()) != null) {
-            resultCountry.add(new Country(""));
+            resultCountry.add(new Country("Name", "Capital", 34, 45));
 
         }
 
         return resultCountry;
+    }
+
+    //@Override
+    public List<Country> getCountry() {
+        return country;
+
     }
 
 }
