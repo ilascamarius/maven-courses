@@ -26,22 +26,14 @@ public class CountryReader {
         BufferedReader breader = new BufferedReader(new FileReader(new File(path)));
         String line = breader.readLine();
         String name = null;
-        //Long poulation=null;
-        //int area=0;
-        // String[] splitResult;
-        // String name = null;
+
         while (line != null) {
 
             String[] countryElem = line.split(Pattern.quote("|"));
             Country country = new Country(countryElem[0], countryElem[1], Integer.parseInt(countryElem[2]), Integer.parseInt(countryElem[3]));
             resultCountry.add(country);
 
-           /* if (name==null){
-                name=line;
-            }else {
-                resultCountry.add(new Country(line, name));
-                name=null;
-            }*/
+
             line = breader.readLine();
         }
 
