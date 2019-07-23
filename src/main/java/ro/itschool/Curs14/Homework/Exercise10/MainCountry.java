@@ -1,7 +1,6 @@
 package ro.itschool.Curs14.Homework.Exercise10;
 
 import java.io.IOException;
-import java.util.List;
 
 public class MainCountry {
     public static void main(String[] args) throws IOException {
@@ -11,8 +10,7 @@ public class MainCountry {
 
 
         CountryStatistics countryStatistics = new CountryStatistics();
-        List<Country> contr = countryStatistics.getAllCountries();
-        System.out.println(countryStatistics.getAllCountries());
+        System.out.println(countryStatistics.getCountryByName());
     }
 
 

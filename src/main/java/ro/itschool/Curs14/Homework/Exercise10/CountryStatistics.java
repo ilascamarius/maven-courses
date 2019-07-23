@@ -10,6 +10,15 @@ public class CountryStatistics {
         return new ArrayList<>(countries);
     }
 
+    public List<Country> getCountryByName() {
+        List<Country> result = new ArrayList<Country>(countries);
+        for (Country c : countries) {
+            result.add(c.getName());
+            System.out.println(result);
+        }
+        return null;
+    }
+
     //List<Country>countriesAll=new ArrayList<Country>();
     //name= String.valueOf(countriesAll.get(0));
 
