@@ -27,10 +27,10 @@ public class CountryReader {
         String name = null;
         while (line != null) {
             String[] countryElement = line.split(Pattern.quote("|"));
-            String[] bordersElement = line.split(Pattern.quote("~"));
+            String[] bordersElement = countryElement[5].split(Pattern.quote("~"));
 
 
-            Country country = new Country(countryElement[0], countryElement[1], Integer.parseInt(countryElement[2]), Integer.parseInt(countryElement[3]), countryElement[4], List.of(bordersElement[5]));
+            Country country = new Country(countryElement[0], countryElement[1], Integer.parseInt(countryElement[2]), Integer.parseInt(countryElement[3]), countryElement[4], List.of(bordersElement));
             resultCountry.add(country);
             line = bufferedReader.readLine();
         }
