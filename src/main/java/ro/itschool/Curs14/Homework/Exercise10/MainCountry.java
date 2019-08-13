@@ -9,8 +9,17 @@ public class MainCountry {
         System.out.println(countryReader.getCountry());
 
 
-        CountryStatistics countryStatistics = new CountryStatistics();
-        System.out.println(countryStatistics.getCountryByName());
+        CountryStatistics countryStatistics = new CountryStatistics(countryReader.getAllCountries());
+        System.out.println(countryStatistics.getCountryNames());
+        System.out.println(countryStatistics.getCountriesStartingWithLetters("A"));
+        System.out.println(countryStatistics.getCountryCapital("Afghanistan"));
+        System.out.println(countryStatistics.getPopulation("Afghanistan"));
+        System.out.println(countryStatistics.getLargestCountry());
+        System.out.println(countryStatistics.getMostPeopleCountry());
+        System.out.println(countryStatistics.getMostDenseCountry());
+        //  System.out.println(countryStatistics.ge);
+
+
     }
 
 

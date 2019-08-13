@@ -7,7 +7,7 @@ public class Main {
         LiquidLevel liquidLevel=new LiquidLevel();
 
 
-        showTheLevel(liquidLevel);
+//        showTheLevel(liquidLevel);
     }
 
     private static void showTheLevel(Bottle bottle){System.out.println(bottle.isOpened());}

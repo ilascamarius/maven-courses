@@ -26,6 +26,11 @@ public class Country {
         return name;
     }
 
+    public Country(String name) {
+        this(name, null, 0, 0, null, null);
+    }
+
+
     public String getCapital() {
         return capital;
     }

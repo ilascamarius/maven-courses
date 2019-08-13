@@ -8,6 +8,7 @@ public class MainDocument {
 
         //     DocSource docSource=new MemoryDocSource();
         DocSource docSource = new FileLineDocSource("src/main/resources/doc.in");
+        System.out.println(docSource.getDocuments());
         testDocumentService(docSource);
 
         DocSource docSource1 = new FileSplitDocSource("src/main/resources/doc-split.in");

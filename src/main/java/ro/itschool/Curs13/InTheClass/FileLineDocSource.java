@@ -21,7 +21,7 @@ public class FileLineDocSource implements DocSource {
         String line = breader.readLine();
         String name = null;
         while (line != null) {
-            System.out.println("p line" + line);
+            // System.out.println(line);
             //Construim lista de documente din fisier
             //Pastram numele
             if (name == null) {

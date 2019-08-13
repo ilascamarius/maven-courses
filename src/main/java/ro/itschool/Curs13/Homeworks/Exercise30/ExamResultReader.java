@@ -1,4 +1,4 @@
-package ro.itschool.Curs13.Homeworks.Exercise30;
+/*package ro.itschool.Curs13.Homeworks.Exercise30;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,3 +21,5 @@ public class ExamResultReader {
     }
 
 }
+
+ */

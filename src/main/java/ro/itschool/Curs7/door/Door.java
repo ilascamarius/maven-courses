@@ -1,7 +1,5 @@
 package ro.itschool.Curs7.door;
 
-import ro.itschool.Curs7.door.AccessProvider;
-
 public class Door implements AccessProvider {
 
     private boolean open;
@@ -27,6 +25,16 @@ public class Door implements AccessProvider {
        locked=false;
        open=true;
    }
+
+    @Override
+    public void close() {
+
+    }
+
+    @Override
+    public void lock() {
+
+    }
 
     void openDoor(){
         locked=false;
